@@ -1,0 +1,1 @@
+https://wphierarchy.com for wp structure
