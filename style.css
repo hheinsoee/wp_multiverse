@@ -1,9 +1,25 @@
 /*
 Theme Name: Yo Yo Lay
 Text Domain: Yo Yo Lay
-Version: 1.0
+Version: 1.1
 Description: Blank theme
 Tags: wp simple
 Author: Hein Soe
 Author URI: https://www.heinsoe.com
 */
+@font-face {
+    font-family: DragracesDemoRegular;
+    src: url(assets/fonts/DragracesDemoRegular.ttf);
+}
+.theme-font {
+    font-family: DragracesDemoRegular;
+}
+.big-font{
+    font-size: 10vmin;
+    line-height: 18vmin;
+}
+.my-card{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 100%);
+}

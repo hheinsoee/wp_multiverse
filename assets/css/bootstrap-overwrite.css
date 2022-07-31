@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgb(19, 19, 19);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.card .card-img-top {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.navbar {
+    padding: 0.5rem 1rem
+}
+.modal-content {
+    background-color: rgb(62 62 62 / 44%);
+    backdrop-filter: blur(20px);
+}
+.card {
+    background-color: rgb(50 50 50 / 100%);
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    padding: 10px;
+    border-radius: 20px;
+    /* backdrop-filter: blur(6px); */
+}
+.card *{
+    border-radius: 10px;
+    overflow: hidden;
+}
+a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-brand):not(.page-link):not(.carousel-control-prev):not(.carousel-control-next) {
+    color: #edc2fa;
+}
+/* .btn .fa{
+    font-size:large;
+} */
