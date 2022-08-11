@@ -8,7 +8,7 @@ body {
 }
 .card .card-img-top {
     object-fit: cover;
-    height: 50vh;
+    height: 40vh;
 }
 
 .navbar {

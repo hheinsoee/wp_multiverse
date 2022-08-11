@@ -12,28 +12,41 @@
 			<div class="swiper">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card">
-							<div>
-								<img class="card-img-top" src="https://media.istockphoto.com/vectors/cinema-poster-with-cola-filmstrip-and-clapper-vector-vector-id1244034031?b=1&k=20&m=1244034031&s=612x612&w=0&h=cgQ-KdfwwzTWe3_f3x8NgnQlKpiEjlHQUG6CmRq4HK4=" alt="">
-								<big>Android</big>
-								<p>ယခု website မှ တိုက်ရိုက် ဒေါင်းလုပ်ဆွဲပါ</p>
-							</div>
-							<button type="button" class="btn btn-primary" style="margin: 0;padding:5px 10px;border:none;height:40px;"><i class="fa fa-android" style="font-size: large;"></i> Download</button>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card">
-							<div>
-								<img class="card-img-top" src="https://media.istockphoto.com/vectors/cinema-poster-with-cola-filmstrip-and-clapper-vector-vector-id1244034031?b=1&k=20&m=1244034031&s=612x612&w=0&h=cgQ-KdfwwzTWe3_f3x8NgnQlKpiEjlHQUG6CmRq4HK4=" alt=""/>
-								<big>Android</big>
-								<p>play store မှ install လုပ်ပါ</p>
-							</div>
-							<button type=" button" class="btn btn-dark" style="margin: 0;padding:5px 10px;border:none;height:40px;"><img style="height:30px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/google-play-badge.png" alt=""></button>
+					<?php
+					$arg3 = array(
+						// 'posts_per_page' => 7,
+						'post_type' => 'apps',
+						// 'paged' => 1,
+						// 'offset' => 5,
+						'orderby' => 'date',
+					);
+					$q3 = new WP_Query($arg3);
+					if ($q3->have_posts()) {
+						while ($q3->have_posts()) {
+							$q3->the_post();
+							if (get_post_meta(get_the_id(), 'app', true) || get_the_tags(get_the_ID())) {
+								$app = get_post_meta(get_the_id(), 'app', true);
+					?>
+								<div class="swiper-slide">
+									<div class="card">
+										<div>
+											<img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+											<big><?=the_title('<b>', '</b>');?></big> <i><small><?= $app['os']; ?></small></i>
+											<div><small><?= $app['description']; ?></small></div>
+										</div>
 
+										<a class="btn btn-primary" type="button" href="<?= $app['link']; ?>">
+											Download</a>
 
-						</div>
-					</div>
+									</div>
+								</div>
+					<?php
+							};
+						}
+					} else {
+						// no posts found
+					} ?>
+
 				</div>
 			</div>
 			<script>

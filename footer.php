@@ -1,15 +1,14 @@
-
 <div style="height: 100px;">
 
 </div>
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="<?php echo get_home_url(); ?>">Home</a>
-    <a class="navbar-brand" href="<?php echo get_home_url(); ?>/package">Packages</a>
+<nav class=" fixed-bottom navbar-expand-sm navbar bg-dark bg-dark">
+    <a class="nav-link nav-item" href="<?php echo get_home_url(); ?>">Home</a>
+    <a class="nav-link nav-item" href="<?php echo get_home_url(); ?>/package">Packages</a>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#helpModel">
+    <a class="nav-link nav-item" type="button" data-toggle="modal" data-target="#helpModel">
         <i class="fa fa-question"></i>လမ်းညွန်
-    </button>
+    </a>
 </nav>
 
 

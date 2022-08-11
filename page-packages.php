@@ -3,7 +3,7 @@ get_header();
 ?>
 
 
-<div class="py-3">
+<div class="py-3 d-flex align-items-center" style="height:calc(100vh - 50px);">
 	<div class="swiper">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">

@@ -1,7 +1,7 @@
 /*
 Theme Name: Yo Yo Lay
 Text Domain: Yo Yo Lay
-Version: 1.1
+Version: 1.2
 Description: Blank theme
 Tags: wp simple
 Author: Hein Soe
@@ -22,4 +22,11 @@ Author URI: https://www.heinsoe.com
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(50, 50, 50, 100%);
+}
+body{
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 }
