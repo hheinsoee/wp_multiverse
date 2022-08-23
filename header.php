@@ -27,3 +27,7 @@
         };
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script>
+        console.log("%cDesign and Developed by ", "font-size:20px;color: #09f");
+        console.log("%cwww.heinsoe.com", "font-size:30px");
+    </script>

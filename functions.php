@@ -2,7 +2,7 @@
 include_once(__DIR__ . "/functions/menus.php");
 include_once(__DIR__ . "/functions/social.php");
 include_once(__DIR__ . "/functions/metabox.php");
-include_once(__DIR__ . "/functions/downloader.php");
+// include_once(__DIR__ . "/functions/downloader.php");
 
 function abc(){
     include_once('package.php');
@@ -96,10 +96,10 @@ function wpdocs_remove_menus()
 /**
  * Remove Appearance > Themes and Appearance > Theme Editor admin menu items
  */
-function wpdd_remove_menu_items()
-{
-    remove_submenu_page('themes.php', 'themes.php');
-    remove_submenu_page('themes.php', 'theme-editor.php');
-}
-add_action('admin_menu', 'wpdocs_remove_menus');
-add_action('admin_menu', 'wpdd_remove_menu_items', 999);
+// function wpdd_remove_menu_items()
+// {
+//     remove_submenu_page('themes.php', 'themes.php');
+//     remove_submenu_page('themes.php', 'theme-editor.php');
+// }
+// add_action('admin_menu', 'wpdocs_remove_menus');
+// add_action('admin_menu', 'wpdd_remove_menu_items', 999);

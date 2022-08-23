@@ -62,7 +62,7 @@ function app_post() {
         'exclude_from_search' => false,
 
         // important
-        'show_in_rest'        => false
+        'show_in_rest'        => true
 
     );
 

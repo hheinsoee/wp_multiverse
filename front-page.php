@@ -32,7 +32,7 @@
 										<div>
 											<img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 											<big><?=the_title('<b>', '</b>');?></big> <i><small><?= $app['os']; ?></small></i>
-											<div><small><?= $app['description']; ?></small></div>
+											<div class="low"><small><?= $app['description']; ?></small></div>
 										</div>
 
 										<a class="btn btn-primary" type="button" href="<?= $app['link']; ?>">

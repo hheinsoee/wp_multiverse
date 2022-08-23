@@ -36,5 +36,3 @@ function package_save($post_id) {
         return;
     update_post_meta($post_id,'package_info',$_POST['package_info']);
 }
-
-// add_action('bulk_edit_custom_box',  'add_seo', 10, 2);
