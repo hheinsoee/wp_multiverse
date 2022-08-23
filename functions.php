@@ -2,7 +2,7 @@
 include_once(__DIR__ . "/functions/menus.php");
 include_once(__DIR__ . "/functions/social.php");
 include_once(__DIR__ . "/functions/metabox.php");
-// include_once(__DIR__ . "/functions/downloader.php");
+include_once(__DIR__ . "/functions/downloader.php");
 
 function abc(){
     include_once('package.php');
