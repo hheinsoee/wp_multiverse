@@ -5,7 +5,7 @@
 install လုပ်ပြီး လုပ်ဆောင်ရမည့်အရာများ
 
 ### create `package` page
-package ဆို့တဲ့ slug နဲ့ page Blank Page တစ်ခု create လုပ်ပါ။ သူက 'domain.com/package' ဆိုတဲ route ကို အလုပ်လုပ်ဖို့ပါ။ အဲဒီနေရာမှာ Page တွေကို ပြမှာပါ
+package ဆို့တဲ့ slug နဲ့ page Blank Page တစ်ခု create လုပ်ပါ။ သူက 'domain.com/package' ဆိုတဲ route ကို အလုပ်လုပ်ဖို့ပါ။ အဲဒီနေရာမှာ Packages တွေကို ပြမှာပါ
 
 
 ## using
