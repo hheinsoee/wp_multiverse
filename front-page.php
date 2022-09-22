@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
 <div style="position:relative; color:#dfdfdf;">
-	<div class="d-flex justify-content-between flex-column" style="min-height: 80vh;">
-		<div class="d-flex justify-content-center align-items-center flex-fill">
+	<div style="height: 90vh;">
+		<div style="height:10vh;">
 			<center>
-				<h1 class="theme-font big-font"><?php echo get_bloginfo('name'); ?></h1>
-				<span><?php echo get_bloginfo('description'); ?></span>
+				<h1 style="line-height:1.4em;font-size:5vh" class=" theme-font"><?php echo get_bloginfo('name'); ?></h1>
 			</center>
 		</div>
-		<div class="py-1">
+		<div style="height:80vh">
 			<div class="swiper">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
@@ -27,18 +26,16 @@
 							if (get_post_meta(get_the_id(), 'app', true) || get_the_tags(get_the_ID())) {
 								$app = get_post_meta(get_the_id(), 'app', true);
 					?>
-								<div class="swiper-slide">
-									<div class="card">
-										<div>
-											<img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-											<big><?=the_title('<b>', '</b>');?></big> <i><small><?= $app['os']; ?></small></i>
-											<div class="low"><small><?= $app['description']; ?></small></div>
-										</div>
-
-										<a class="btn btn-primary" type="button" href="<?= $app['link']; ?>">
-											Download</a>
-
+								<div class="swiper-slide card d-flex justify-content-between flex-column">
+									<img style="flex:1" class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+									<div>
+										<big><?= the_title('<b>', '</b>'); ?></big> <i><small><?= $app['os']; ?></small></i>
+										<div class="low"><small><?= $app['description']; ?></small></div>
 									</div>
+
+									<a class="btn btn-primary" type="button" href="<?= $app['link']; ?>">
+										Download</a>
+
 								</div>
 					<?php
 							};
@@ -53,7 +50,7 @@
 				const swiper = new Swiper('.swiper', {
 					// Optional parameters
 					// direction: 'vertical',
-					slidesPerView: 1.5,
+					slidesPerView: 'auto',
 					spaceBetween: 0,
 					loop: true,
 					autoplay: {
@@ -64,9 +61,9 @@
 					grabCursor: true,
 					centeredSlides: true,
 					coverflowEffect: {
-						rotate: 50,
+						rotate: 30,
 						stretch: 0,
-						depth: 100,
+						depth: 150,
 						modifier: 1,
 						slideShadows: true,
 					},

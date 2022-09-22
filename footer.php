@@ -1,6 +1,3 @@
-<div style="height: 100px;">
-
-</div>
 <nav class=" fixed-bottom navbar-expand-sm navbar bg-dark bg-dark">
     <a class="nav-link nav-item" href="<?php echo get_home_url(); ?>">Home</a>
     <a class="nav-link nav-item" href="<?php echo get_home_url(); ?>/package">Packages</a>

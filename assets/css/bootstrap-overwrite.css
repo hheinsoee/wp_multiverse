@@ -6,9 +6,13 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.card .card-img-top {
+.card {
     object-fit: cover;
-    height: 40vh;
+    height: 80vh;
+    width:38vh;
+}
+.card img{
+    object-fit: cover;
 }
 
 .navbar {
